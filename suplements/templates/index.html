@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block 'head' %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock %}
+
+{% block 'title' %} <title>Stronger Suplements</title> {% endblock %}
+
+{% block 'main' %}
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{% static 'img/carrosel_1.jpg' %}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'img/carrosel_2.jpg' %}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'img/carrosel_3.jpg' %}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'img/carrosel_4.jpg' %}" class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<div class="block-suplements">
+    <ul>
+        <li>
+            <a href="{% url 'suplementos' %}">
+                <div class="suplements">
+                    <img src="{% static 'img/proteina.png' %}" alt="">
+                    <p>Proteínas</p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'suplementos' %}">
+                <div class="suplements">
+                    <img src="{% static 'img/vitaminas.png' %}" alt="">
+                    <p>Vitaminas</p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'suplementos' %}">
+                <div class="suplements">
+                    <img src="{% static 'img/creatina.png' %}" alt="">
+                    <p>Aminoácidos</p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'suplementos' %}">
+                <div class="suplements">
+                    <img src="{% static 'img/termogenico.png' %}" alt="">
+                    <p>Termogênicos</p>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="block-coments">
+    <div class="logo-coments">
+        <img src="{% static 'img/logo_stronger_blue.png' %}" alt="">
+    </div>
+    <h3>Milhares de clientes já compraram suplementos<br>
+        com a Growth, confira algumas opiniões.</h3>
+    <div class="coments">
+        <div class="iten-coment">
+            <p class="avaliation">Ótimos produtos entregas muito rápidas</p>
+            <i class='bx bxs-star' style='color:#e8ff00'></i>
+            <p class="author">Jeferson Queiroga</p>
+        </div>
+        <div class="iten-coment">
+            <p class="avaliation">Loja confiável, com produtos de primeira</p>
+            <i class='bx bxs-star' style='color:#e8ff00'></i>
+            <p class="author">Kaio Eduardo</p>
+        </div>
+        <div class="iten-coment">
+            <p class="avaliation">Preços acessíveis, agora eu fico monstro!</p>
+            <i class='bx bxs-star' style='color:#e8ff00'></i>
+            <p class="author">João Roque</p>
+        </div>
+    </div>
+</div>
+
+<div class="block-comunication">
+    <p>Cadastre seu email e receba promoções<br>e novidades exclusivas da Stronger </p>
+    <div class="input-email">
+        <input type="email" name="" id="" placeholder="Digite seu email">
+        <button>Enviar</button>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,263 @@
+body {
+    margin: 0;
+}
+
+nav {
+    background-color: #0741AD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 90px 20px 90px;
+    height: 150px;
+}
+
+nav img {
+    margin-right: 100px;
+}
+
+nav .search {
+    margin-right: 100px;
+}
+
+p {
+    color: #ffffff;
+}
+
+nav,
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.li-itens {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+
+.li-itens i {
+    padding-right: 10px;
+}
+
+.li-itens p {
+    margin: 0px;
+}
+
+.logo {
+    width: 104px;
+    height: 120;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    vertical-align: baseline;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding-left: 0px;
+}
+
+#inputSearch {
+    float: left;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 12px;
+    width: 328px;
+    height: 48px;
+}
+
+#inputSearch:focus {
+    text-decoration: none;
+    border: none;
+}
+
+.bx-search-alt-2 {
+    color: #0741AD;
+    padding-left: 12px;
+}
+
+.sub-nav {
+    background-color: #236EFA;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    padding: 0px 20px 0px 20px;
+}
+
+.sub-nav ul {
+    padding-top: 18px;
+    list-style: none;
+}
+
+
+.sub-nav li {
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: 15px;
+    padding-right: 50px !important;
+}
+
+.sub-nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+.telefone {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 400 !important;
+    cursor: pointer;
+}
+
+.li-itens a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.sub-nav a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.search {
+    background-color: #ffffff;
+    width: 300px;
+    height: 40px;
+    border-radius: 12px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search input {
+    border: none;
+    padding-right: 70px;
+}
+
+.search input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.footer {
+    margin: 60px 40px 30px 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row !important;
+}
+
+.atendimento {
+    margin-right: 80px;
+}
+
+.atendimento a {
+    font-weight: 400;
+    color: #000000;
+}
+
+.atendimento a:hover {
+    color: #0741AD;
+}
+
+.atendimento ul {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.seguranca {
+    width: 400px;
+}
+
+.seguranca p {
+    color: #000000;
+    font-size: 12px;
+}
+
+.contatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    margin-right: 80px;
+}
+
+.telefone, .email, .midias{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.telefone i{
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.email i{
+    padding-right: 20px;
+}
+
+.telefone p, .telefone span, .email span{
+    color: #000000;
+}
+
+.telefone span, .email span{
+    font-weight: bolder;
+}
+
+.email a{
+    font-weight: 400;
+    color: #000000;
+}
+
+.email{
+    padding-right: 15px;
+    margin-bottom: 30px;
+}
+
+.midias p{
+   color: #505050;
+   padding-right: 12px;
+   margin: 0px;
+}
+
+.midias {
+    border: solid 1px #0741AD;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.info-add{
+    background-color: #0741AD;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}
+
+.info-add p{
+    color: #ffffff;
+    font-size: 12px;
+}
+

@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block 'head' %}
+<link rel="stylesheet" href="{% static 'css/sobre.css' %}">
+{% endblock %}
+
+{% block 'title' %} <title>Stronger | Team</title> {% endblock %}
+
+{% block 'main' %}
+<div class="stronger">
+    <h4>SOBRE NÓS</h4>
+
+    <div class="logo">
+        <img src="{% static 'img/logo_stronger_blue.png' %}" alt="">
+    </div>
+    <p>Se você quer economizar na compra dos seus suplementos, a Stronger Suplementos é o lugar certo. Ao comprar à
+        vista pelo
+        site, você já garante 10% de desconto. Além disso, os suplementos são produzidos com alta qualidade e não
+        passam
+        por representantes, revendedores e lojistas até chegar à sua casa. Você compra direto da Stronger
+        Suplementos,
+        fabricante de referência no mercado, e aproveita um preço que é muito mais barato. O foco é a qualidade e os
+        produtos levam o que existe de melhor em matéria-prima. E não tenha medo, os suplementos Stronger passam por
+        baterias rigorosas de análise em nosso laboratório interno e nos laboratórios parceiros (ALAC e LABCAL). Com
+        o
+        suplemento certo você está um passo à frente na busca pelos seus objetivos. Vai ficar de fora?</p>
+</div>
+
+<div class="team">
+    <h4>EQUIPE</h4>
+    <div class="team-person">
+        <div class="person one">
+            <img src="{% static 'img/felipe.png' %}" alt="">
+            <div>
+                <span>Felipe Freitas Lopes</span>
+                <p>Estudante do Curso Técnico Integrado de Informática do IFRN.</p>
+            </div>
+        </div>
+        <div class="person">
+            <img src="{% static 'img/marcos.png' %}" alt="">
+            <div>
+                <span>Marcos Vinícius Fernandes Neris</span>
+                <p>Estudante do Curso Técnico Integrado de Informática do IFRN.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

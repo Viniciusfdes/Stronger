@@ -1,0 +1,157 @@
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.list-atendimento{
+    display: flex;
+    flex-direction: column;
+}
+
+.list-atendimento a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.list-atendimento a:hover{
+    color: #0741AD;
+    text-decoration: none;
+}
+
+.suplements {
+    background-color: #236EFA;
+    border-radius: 120px;
+    height: 210px;
+    width: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 30px 0px 30px;
+    ;
+}
+
+.suplements img {
+    width: 150px;
+    height: 157px;
+    padding: 20px 15px 5px 15px;
+}
+
+.suplements p {
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: 15;
+}
+
+.block-suplements {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.block-coments {
+    background-color: #236EFA;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.logo-coments {
+    background-color: #ffffff;
+    border: solid 1px #0741AD;
+    border-radius: 120px;
+    margin-top: -100px;
+}
+
+.logo-coments img {
+    width: 120px;
+    height: 120px;
+    padding: 20px;
+}
+
+.block-coments h3 {
+    font-size: 25px;
+    font-weight: bolder;
+    color: #ffffff;
+    text-align: center;
+    padding: 50px;
+}
+
+.coments {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+}
+
+.iten-coment {
+    background-color: #EDEDED;
+    margin: 30px;
+    width: 250px;
+    height: 250px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.iten-coment p{
+    margin: 30px;
+}
+
+.avaliation{
+    color: #505050;
+}
+
+.author{
+    font-weight:bolder;
+    color: #000000;
+}
+
+.block-comunication {
+    background-color: #236EFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.block-comunication p{
+    padding-right: 100px;
+}
+
+.input-email{
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 12px;
+}
+
+.input-email input, .input-email button{
+    border-radius: 12px;
+}
+
+.input-email button{
+    background-color: #0741AD;
+    color: #ffffff;
+    border: none;
+    padding: 3px 8px 3px 8px;
+}
+
+.input-email input {
+    border: none;
+    padding-left: 10px;
+}
+
+.input-email input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
