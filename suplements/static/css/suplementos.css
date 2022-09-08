@@ -1,0 +1,95 @@
+.section-suplementos {
+    padding: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.col-xl-10 {
+    padding: 0;
+}
+
+.row {
+    justify-content: center;
+    align-items: flex-start !important;
+}
+
+.card-suplemento {
+    margin-bottom: 16px;
+    border: 0.5px solid #E1E1E1;
+    padding: 16px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transform: scale(0.98);
+    transition: box-shadow 0.5s, transform 0.5s;
+    height: auto;
+    width: auto;
+}
+
+.card-suplemento:hover {
+    transform: scale(1);
+    border: 1px solid #0741AD;
+    box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-suplemento span {
+    color: #7AC41A;
+}
+
+.card-suplemento img {
+    width: 160px;
+    height: 180px;
+}
+
+.card-suplemento .imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.marca {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.nome {
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px 0 2px 0;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    display: -webkit-box;
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
+}
+
+.valor {
+    font-weight: 800;
+    font-size: 22px;
+    color: #2ab523 !important;
+}
+
+.vista {
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.prazo {
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.card-suplemento p {
+    color: #292929;
+    margin: 0;
+}
+
+h4 {
+    font-weight: bolder;
+    font-size: 30px;
+    color: #236EFA;
+    margin-bottom: 20px;
+}

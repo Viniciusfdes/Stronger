@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block 'head' %}
+<link rel="stylesheet" href="{% static 'css/detalhes.css' %}">
+{% endblock %}
+
+{% block 'title' %} <title>Stronger | Team</title> {% endblock %}
+
+{% block 'main' %}
+<section>
+    <div class="block-detalhe">
+        <div>
+            <img src="/media/{{ suplemento.imagem }}" alt="">
+        </div>
+        <div>
+            <p class="tipo">Ref. tipo: {{ suplemento.tipo }}</p>
+            <p class="marca">{{ suplemento.marca }}</p>
+            <p class="nome">{{ suplemento.nome }}</p>
+            <p class="valor">R$ {{ suplemento.valor }} <span class="cada">(cada)</span></p>
+            <p class="vista">à vista <span>(10% de desconto)</span></p>
+            <p class="prazo">ou 3x sem juros</p>
+
+            <p class="estoque">Em estoque, envio imediato!</p>
+            <button class="comprar">COMPRAR</button>
+        </div>
+    </div>
+    <div class="descricao">
+        <p class="descricao-titulo">Descrição</p>
+        <p class="descricao-conteudo">{{ suplemento.descricao }}</p>
+    </div>
+</section>
+{% endblock %}

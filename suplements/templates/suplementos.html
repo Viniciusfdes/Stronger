@@ -8,16 +8,37 @@
 {% block 'title' %} <title>Stronger | Team</title> {% endblock %}
 
 {% block 'main' %}
-<div>
+<section class="container-fluid section-suplementos">
+    <h4>SUPLEMENTOS</h4>
+    <div class="row">
+        <div class="col-xl-10">
+            <section class="container-fluid">
+                <div class="row d-flex">
+                    {% for suplemento in suplementos %}
+                    <div class="cartao col-xl-3 col-lg-4 col-md-4 col-sm-6 col-8">
+                        <a class="" href="{% url 'detalhes' suplemento.id %}">
+                            <div class="card-suplemento">
+                                <div class="imagem">
+                                    <img class="img-fluid img-card" src="/media/{{ suplemento.imagem }}" alt="">
+                                </div>
 
-    
-    <div>
-        <img src="" alt="">
-        <h3>Nome do suplemento</h3>
-        <p>Descrição</p>
-        <span>Valor</span>
-        <p>Valor boleto</p>
-        <p>Valor cartão</p>
+                                <p class="nome">{{ suplemento.nome }}</p>
+                                <p class="marca">{{ suplemento.marca }}</p>
+
+                                <div class="info-valores">
+                                    <p class="valor">Por R$ {{ suplemento.valor}}</p>
+                                    <p class="vista">à vista <span>(10% de desconto)</span></p>
+                                    <p class="prazo">ou 3x sem juros</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+
+        </div>
     </div>
-</div>
+
+</section>
 {% endblock %}
