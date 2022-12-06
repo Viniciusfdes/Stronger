@@ -1,7 +1,3 @@
-from ast import mod
-from contextlib import nullcontext
-from tokenize import blank_re
-from unittest.util import _MAX_LENGTH
 from django.db import models
 
 class Marca(models.Model):
@@ -10,9 +6,8 @@ class Marca(models.Model):
     def __str__(self):
        return self.nome 
 
-    
 class Suplemento(models.Model): 
-
+    
     TIPO_CHOICES = (
         ('cab', 'Carboidratos'),
         ('ter', 'Termogênico'),

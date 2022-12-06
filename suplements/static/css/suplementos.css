@@ -24,7 +24,7 @@
     border-radius: 10px;
     transform: scale(0.98);
     transition: box-shadow 0.5s, transform 0.5s;
-    height: auto;
+    height: 365px;
     width: auto;
 }
 
